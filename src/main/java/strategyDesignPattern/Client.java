@@ -6,7 +6,5 @@ public class Client {
         vehicle.drive();
         vehicle=new GoodVehicle();
         vehicle.drive();
-
-
     }
 }
