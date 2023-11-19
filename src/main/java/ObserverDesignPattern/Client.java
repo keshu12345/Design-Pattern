@@ -14,6 +14,7 @@ public class Client {
         iphoneObservable.add(observer1);
         iphoneObservable.add(observer2);
         iphoneObservable.add(observer3);
+        iphoneObservable.remove(observer2);
         iphoneObservable.setStockCount(10);
     }
 }
