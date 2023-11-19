@@ -2,7 +2,15 @@ package FactoryDesignPattern;
 
 public class ShapeFactory {
 
-     Shape getShape(String inputObject){
+    Shape getShape(String inputObject){
+        return switch (inputObject) {
+            case "CIRCLE" -> new Circle();
+            case "TRIANGLE" -> new Triangle();
+            default -> null;
+        };
+    }
+
+     Shape getShapeOld(String inputObject){
         switch (inputObject){
             case "CIRCLE":
                 return  new Circle();
